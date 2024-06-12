@@ -35,10 +35,10 @@ public class ContactController {
          }
          public void Displaycontacts(){
              for (Contact contact : contacts) {
-                 System.out.printf("%-30 || %-30 || %-30 || %-30 || %-30","Name","Company","Email","Phone");
+                 System.out.printf("%-30s || %-30s || %-30s || %-30s || %-30s","Name","Company","Email","Phone");
                  for(int i = 0; i < contacts.size(); i++){
                      Contact ct = contacts.get(i);
-                     System.out.printf("%-30 || %-30 || %-30 || %-30 || %-30",ct.getName(),ct.getCompany(),ct.getEmail(),ct.getPhone());
+                     System.out.printf("%-30s || %-30s || %-30s || %-30s || %-30s",ct.getName(),ct.getCompany(),ct.getEmail(),ct.getPhone());
                  }
              }
          }
